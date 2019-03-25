@@ -5,7 +5,7 @@ var slug = document.location.pathname;
 var ctld = blog.substr(blog.lastIndexOf("."));
 var currentURL=location.href;
 var str = currentURL;
-  var res = str.replace("http://wongoding.com/page-safelink.php?site=", "");
+  var res = str.replace("http://wongoding.com/page-safelink/?site=", "");
 $(".Visit_Link").hide();
 function changeLink(){
     var decodedString = Base64.decode(res);
